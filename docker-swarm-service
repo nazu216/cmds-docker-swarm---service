@@ -1,0 +1,40 @@
+43 LEADER:
+
+
+ docker swarm init --advertise-addr=172.31.5.11
+
+# 172.31.5.11-----> is private ip addr of leader machine
+
+   44  docker node ls
+   45  docker service create --name apache --replicas 3 -p 83:80 hshar/webapp
+
+# hshar/webapp-------> image name
+
+   46  docker service ls
+   47  docker ps
+   48  docker service scale apache=10
+   49  dokcer ps
+   50  docker ps
+   51  docker rm -f | dockers ps -a -q
+   52  docker rm -f | (dockers ps -a -q)
+   53  docker rm -f | (docker ps -a -q)
+   54  docker ps
+   55  docker ps -a
+   56  docker swarm leave -f
+   57  docker ps
+   58  docker rm -f | docker ps -a p
+   59  docker rm -f | docker ps -a -q
+   60  docker ps
+   61  docker-compose down
+   62  docker ps
+   63  docker-compose up
+
+WORKER:
+
+
+
+ docker swarm join --token SWMTKN-1-1t3mhlp8ewsbsnwszgp4i5zpkuf5q6443631qk3v6aaalhd8hv-bm1pvu6sv04cn5t5yt6l97m4s 172.31.28.5:2377
+   65  docker node ls
+   66  docker ps
+   67  docker swarm leave
+   68  docker ps
