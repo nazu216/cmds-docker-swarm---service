@@ -1,0 +1,16 @@
+docker --version
+    2  yum install docker -y
+    3  docker --version
+    4  systemctl start docker
+    5  systemctl enable docker
+    6  sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+    7  sudo chmod +x /usr/local/bin/docker-compose
+    8  sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+    9  docker-compose --version
+   10  vim docker-compose.yaml
+   11  docker-compose up -d
+   12  vim docker-compose-file-manual.yaml
+   13  vim docker-compose-file-manual.yaml
+   16  docker-compose up -d
+   17  docker-compose -f docker-compose-file-manual.yaml up -d
+   
